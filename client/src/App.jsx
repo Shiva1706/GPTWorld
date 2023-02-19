@@ -15,7 +15,7 @@ function App() {
   },[posts])
 
   const fetchBotResponse = async() =>{
-    const { data } = await axios.post("http://localhost:4000", {input},
+    const { data } = await axios.post("https://gptworld.onrender.com", {input},
       {headers: {"Content-Type": "application/json"}}
     );
 
